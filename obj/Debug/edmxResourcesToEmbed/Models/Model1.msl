@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="stajdenemeModelStoreContainer" CdmEntityContainer="stajdenemeEntities3">
+    <EntitySetMapping Name="ilceler">
+      <EntityTypeMapping TypeName="stajdenemeModel.ilceler">
+        <MappingFragment StoreEntitySet="ilceler">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="ilce" ColumnName="ilce" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="iller">
+      <EntityTypeMapping TypeName="stajdenemeModel.iller">
+        <MappingFragment StoreEntitySet="iller">
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sehir" ColumnName="sehir" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="stajdenemeModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_admin">
+      <EntityTypeMapping TypeName="stajdenemeModel.tbl_admin">
+        <MappingFragment StoreEntitySet="tbl_admin">
+          <ScalarProperty Name="user_id" ColumnName="user_id" />
+          <ScalarProperty Name="user_name" ColumnName="user_name" />
+          <ScalarProperty Name="user_pass" ColumnName="user_pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_basvuru">
+      <EntityTypeMapping TypeName="stajdenemeModel.tbl_basvuru">
+        <MappingFragment StoreEntitySet="tbl_basvuru">
+          <ScalarProperty Name="basvuru_id" ColumnName="basvuru_id" />
+          <ScalarProperty Name="basvuru_ad" ColumnName="basvuru_ad" />
+          <ScalarProperty Name="basvuru_soyad" ColumnName="basvuru_soyad" />
+          <ScalarProperty Name="basvuru_uyruk" ColumnName="basvuru_uyruk" />
+          <ScalarProperty Name="basvuru_il" ColumnName="basvuru_il" />
+          <ScalarProperty Name="basvuru_ilce" ColumnName="basvuru_ilce" />
+          <ScalarProperty Name="basvuru_adres" ColumnName="basvuru_adres" />
+          <ScalarProperty Name="basvuru_okul" ColumnName="basvuru_okul" />
+          <ScalarProperty Name="basvuru_fakulte" ColumnName="basvuru_fakulte" />
+          <ScalarProperty Name="basvuru_bolum" ColumnName="basvuru_bolum" />
+          <ScalarProperty Name="basvuru_sınıf" ColumnName="basvuru_sınıf" />
+          <ScalarProperty Name="basvuru_notortalama" ColumnName="basvuru_notortalama" />
+          <ScalarProperty Name="basvuru_tel" ColumnName="basvuru_tel" />
+          <ScalarProperty Name="basvuru_email" ColumnName="basvuru_email" />
+          <ScalarProperty Name="basvuru_becerilersql" ColumnName="basvuru_becerilersql" />
+          <ScalarProperty Name="basvuru_becerilerc_" ColumnName="basvuru_becerilerc#" />
+          <ScalarProperty Name="basvuru_becerilerhtml" ColumnName="basvuru_becerilerhtml" />
+          <ScalarProperty Name="basvuru_becerilercss" ColumnName="basvuru_becerilercss" />
+          <ScalarProperty Name="basvuru_becerileraspnet" ColumnName="basvuru_becerileraspnet" />
+          <ScalarProperty Name="basvuru_becerilermvc" ColumnName="basvuru_becerilermvc" />
+          <ScalarProperty Name="basvuru_becerilerjs" ColumnName="basvuru_becerilerjs" />
+          <ScalarProperty Name="basvuru_becerilerjquery" ColumnName="basvuru_becerilerjquery" />
+          <ScalarProperty Name="basvuru_becerilerjava" ColumnName="basvuru_becerilerjava" />
+          <ScalarProperty Name="basvuru_becerilerjson" ColumnName="basvuru_becerilerjson" />
+          <ScalarProperty Name="basvuru_becerilerxml" ColumnName="basvuru_becerilerxml" />
+          <ScalarProperty Name="basvuru_hobiler" ColumnName="basvuru_hobiler" />
+          <ScalarProperty Name="basvuru_başlangıc" ColumnName="basvuru_başlangıc" />
+          <ScalarProperty Name="basvuru_bitis" ColumnName="basvuru_bitis" />
+          <ScalarProperty Name="basvuru_yabancıdil" ColumnName="basvuru_yabancıdil" />
+          <ScalarProperty Name="basvuru_saglık" ColumnName="basvuru_saglık" />
+          <ScalarProperty Name="basvuru_referans" ColumnName="basvuru_referans" />
+          <ScalarProperty Name="basvuru_github" ColumnName="basvuru_github" />
+          <ScalarProperty Name="basvuru_covid" ColumnName="basvuru_covid" />
+          <ScalarProperty Name="basvuru_nasılbuldunuz" ColumnName="basvuru_nasılbuldunuz" />
+          <ScalarProperty Name="basvuru_bizinedensectiniz" ColumnName="basvuru_bizinedensectiniz" />
+          <ScalarProperty Name="basvuru_diger" ColumnName="basvuru_diger" />
+          <ScalarProperty Name="basvuru_foto" ColumnName="basvuru_foto" />
+          <ScalarProperty Name="basvuru_cv" ColumnName="basvuru_cv" />
+          <ScalarProperty Name="basvuru_adminyorum" ColumnName="basvuru_adminyorum" />
+          <ScalarProperty Name="basvuru_basvurutarihi" ColumnName="basvuru_basvurutarihi" />
+          <ScalarProperty Name="basvuru_ilanid" ColumnName="basvuru_ilanid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_bolum">
+      <EntityTypeMapping TypeName="stajdenemeModel.tbl_bolum">
+        <MappingFragment StoreEntitySet="tbl_bolum">
+          <ScalarProperty Name="bolum_id" ColumnName="bolum_id" />
+          <ScalarProperty Name="fakulte_id" ColumnName="fakulte_id" />
+          <ScalarProperty Name="universite_id" ColumnName="universite_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_fakulte">
+      <EntityTypeMapping TypeName="stajdenemeModel.tbl_fakulte">
+        <MappingFragment StoreEntitySet="tbl_fakulte">
+          <ScalarProperty Name="fakulte_id" ColumnName="fakulte_id" />
+          <ScalarProperty Name="universite_id" ColumnName="universite_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_ilan">
+      <EntityTypeMapping TypeName="stajdenemeModel.tbl_ilan">
+        <MappingFragment StoreEntitySet="tbl_ilan">
+          <ScalarProperty Name="ilan_id" ColumnName="ilan_id" />
+          <ScalarProperty Name="ilan_sahibi" ColumnName="ilan_sahibi" />
+          <ScalarProperty Name="ilan_baslik" ColumnName="ilan_baslik" />
+          <ScalarProperty Name="ilan_aciklama" ColumnName="ilan_aciklama" />
+          <ScalarProperty Name="ilan_tarih" ColumnName="ilan_tarih" />
+          <ScalarProperty Name="ilan_beceriler" ColumnName="ilan_beceriler" />
+          <ScalarProperty Name="ilan_tip" ColumnName="ilan_tip" />
+          <ScalarProperty Name="ilan_durum" ColumnName="ilan_durum" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_tip">
+      <EntityTypeMapping TypeName="stajdenemeModel.tbl_tip">
+        <MappingFragment StoreEntitySet="tbl_tip">
+          <ScalarProperty Name="tip_id" ColumnName="tip_id" />
+          <ScalarProperty Name="tip_name" ColumnName="tip_name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_universite">
+      <EntityTypeMapping TypeName="stajdenemeModel.tbl_universite">
+        <MappingFragment StoreEntitySet="tbl_universite">
+          <ScalarProperty Name="universite_id" ColumnName="universite_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_yetkinlik">
+      <EntityTypeMapping TypeName="stajdenemeModel.tbl_yetkinlik">
+        <MappingFragment StoreEntitySet="tbl_yetkinlik">
+          <ScalarProperty Name="yetkinlik_id" ColumnName="yetkinlik_id" />
+          <ScalarProperty Name="staj_id" ColumnName="staj_id" />
+          <ScalarProperty Name="yetkinlik_sql" ColumnName="yetkinlik_sql" />
+          <ScalarProperty Name="yetkinlik_c_" ColumnName="yetkinlik_c#" />
+          <ScalarProperty Name="yetkinlik_aspnet" ColumnName="yetkinlik_aspnet" />
+          <ScalarProperty Name="yetkinlik_mvc" ColumnName="yetkinlik_mvc" />
+          <ScalarProperty Name="yetkinlik_html" ColumnName="yetkinlik_html" />
+          <ScalarProperty Name="yetkinlik_css" ColumnName="yetkinlik_css" />
+          <ScalarProperty Name="yetkinlik_jquery" ColumnName="yetkinlik_jquery" />
+          <ScalarProperty Name="yetkinlik_javascript" ColumnName="yetkinlik_javascript" />
+          <ScalarProperty Name="yetkinlik_java" ColumnName="yetkinlik_java" />
+          <ScalarProperty Name="yetkinlik_xml" ColumnName="yetkinlik_xml" />
+          <ScalarProperty Name="yetkinlik_json" ColumnName="yetkinlik_json" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

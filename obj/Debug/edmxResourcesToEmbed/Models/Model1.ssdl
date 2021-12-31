@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="stajdenemeModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ilceler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="ilce" Type="nvarchar" MaxLength="255" />
+    <Property Name="sehir" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+  </EntityType>
+  <EntityType Name="iller">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="sehir" Type="nvarchar" MaxLength="255" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="tbl_admin">
+    <Key>
+      <PropertyRef Name="user_id" />
+    </Key>
+    <Property Name="user_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="user_name" Type="nvarchar" MaxLength="50" />
+    <Property Name="user_pass" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_basvuru">
+    <Key>
+      <PropertyRef Name="basvuru_id" />
+    </Key>
+    <Property Name="basvuru_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="basvuru_ad" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_soyad" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_uyruk" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_il" Type="int" />
+    <Property Name="basvuru_ilce" Type="int" />
+    <Property Name="basvuru_adres" Type="nvarchar(max)" />
+    <Property Name="basvuru_okul" Type="int" />
+    <Property Name="basvuru_fakulte" Type="int" />
+    <Property Name="basvuru_bolum" Type="int" />
+    <Property Name="basvuru_sınıf" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_notortalama" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_tel" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_email" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerilersql" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerilerc#" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerilerhtml" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerilercss" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerileraspnet" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerilermvc" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerilerjs" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerilerjquery" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerilerjava" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerilerjson" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_becerilerxml" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_hobiler" Type="nvarchar(max)" />
+    <Property Name="basvuru_başlangıc" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_bitis" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_yabancıdil" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_saglık" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_referans" Type="nvarchar" MaxLength="150" />
+    <Property Name="basvuru_github" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_covid" Type="nvarchar" MaxLength="50" />
+    <Property Name="basvuru_nasılbuldunuz" Type="nvarchar(max)" />
+    <Property Name="basvuru_bizinedensectiniz" Type="nvarchar(max)" />
+    <Property Name="basvuru_diger" Type="nvarchar(max)" />
+    <Property Name="basvuru_foto" Type="nvarchar" MaxLength="150" />
+    <Property Name="basvuru_cv" Type="nvarchar" MaxLength="150" />
+    <Property Name="basvuru_adminyorum" Type="nvarchar(max)" />
+    <Property Name="basvuru_basvurutarihi" Type="datetime" />
+    <Property Name="basvuru_ilanid" Type="int" />
+  </EntityType>
+  <EntityType Name="tbl_bolum">
+    <Key>
+      <PropertyRef Name="bolum_id" />
+    </Key>
+    <Property Name="bolum_id" Type="int" Nullable="false" />
+    <Property Name="fakulte_id" Type="int" />
+    <Property Name="universite_id" Type="int" />
+    <Property Name="name" Type="varchar" MaxLength="150" />
+    <Property Name="status" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_fakulte">
+    <Key>
+      <PropertyRef Name="fakulte_id" />
+    </Key>
+    <Property Name="fakulte_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="universite_id" Type="int" />
+    <Property Name="name" Type="varchar" MaxLength="150" />
+    <Property Name="status" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_ilan">
+    <Key>
+      <PropertyRef Name="ilan_id" />
+    </Key>
+    <Property Name="ilan_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ilan_sahibi" Type="nvarchar" MaxLength="50" />
+    <Property Name="ilan_baslik" Type="nvarchar" MaxLength="50" />
+    <Property Name="ilan_aciklama" Type="nvarchar(max)" />
+    <Property Name="ilan_tarih" Type="date" />
+    <Property Name="ilan_beceriler" Type="nvarchar(max)" />
+    <Property Name="ilan_tip" Type="int" />
+    <Property Name="ilan_durum" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_tip">
+    <Key>
+      <PropertyRef Name="tip_id" />
+    </Key>
+    <Property Name="tip_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tip_name" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="tbl_universite">
+    <Key>
+      <PropertyRef Name="universite_id" />
+    </Key>
+    <Property Name="universite_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="name" Type="varchar" MaxLength="150" />
+    <Property Name="status" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_yetkinlik">
+    <Key>
+      <PropertyRef Name="yetkinlik_id" />
+    </Key>
+    <Property Name="yetkinlik_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="staj_id" Type="int" />
+    <Property Name="yetkinlik_sql" Type="nvarchar" MaxLength="50" />
+    <Property Name="yetkinlik_c#" Type="nvarchar" MaxLength="50" />
+    <Property Name="yetkinlik_aspnet" Type="nvarchar" MaxLength="50" />
+    <Property Name="yetkinlik_mvc" Type="nvarchar" MaxLength="50" />
+    <Property Name="yetkinlik_html" Type="nvarchar" MaxLength="50" />
+    <Property Name="yetkinlik_css" Type="nvarchar" MaxLength="50" />
+    <Property Name="yetkinlik_jquery" Type="nvarchar" MaxLength="50" />
+    <Property Name="yetkinlik_javascript" Type="nvarchar" MaxLength="50" />
+    <Property Name="yetkinlik_java" Type="nvarchar" MaxLength="50" />
+    <Property Name="yetkinlik_xml" Type="nvarchar" MaxLength="50" />
+    <Property Name="yetkinlik_json" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_ilceler_iller">
+    <End Role="iller" Type="Self.iller" Multiplicity="1" />
+    <End Role="ilceler" Type="Self.ilceler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="ilceler">
+        <PropertyRef Name="sehir" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_basvuru_ilceler">
+    <End Role="ilceler" Type="Self.ilceler" Multiplicity="0..1" />
+    <End Role="tbl_basvuru" Type="Self.tbl_basvuru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ilceler">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_basvuru">
+        <PropertyRef Name="basvuru_ilce" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_basvuru_iller">
+    <End Role="iller" Type="Self.iller" Multiplicity="0..1" />
+    <End Role="tbl_basvuru" Type="Self.tbl_basvuru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="iller">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_basvuru">
+        <PropertyRef Name="basvuru_il" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_basvuru_tbl_bolum">
+    <End Role="tbl_bolum" Type="Self.tbl_bolum" Multiplicity="0..1" />
+    <End Role="tbl_basvuru" Type="Self.tbl_basvuru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_bolum">
+        <PropertyRef Name="bolum_id" />
+      </Principal>
+      <Dependent Role="tbl_basvuru">
+        <PropertyRef Name="basvuru_bolum" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_basvuru_tbl_fakulte">
+    <End Role="tbl_fakulte" Type="Self.tbl_fakulte" Multiplicity="0..1" />
+    <End Role="tbl_basvuru" Type="Self.tbl_basvuru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_fakulte">
+        <PropertyRef Name="fakulte_id" />
+      </Principal>
+      <Dependent Role="tbl_basvuru">
+        <PropertyRef Name="basvuru_fakulte" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_basvuru_tbl_universite">
+    <End Role="tbl_universite" Type="Self.tbl_universite" Multiplicity="0..1" />
+    <End Role="tbl_basvuru" Type="Self.tbl_basvuru" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_universite">
+        <PropertyRef Name="universite_id" />
+      </Principal>
+      <Dependent Role="tbl_basvuru">
+        <PropertyRef Name="basvuru_okul" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_bolum_tbl_fakulte">
+    <End Role="tbl_fakulte" Type="Self.tbl_fakulte" Multiplicity="0..1" />
+    <End Role="tbl_bolum" Type="Self.tbl_bolum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_fakulte">
+        <PropertyRef Name="fakulte_id" />
+      </Principal>
+      <Dependent Role="tbl_bolum">
+        <PropertyRef Name="fakulte_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_bolum_tbl_universite">
+    <End Role="tbl_universite" Type="Self.tbl_universite" Multiplicity="0..1" />
+    <End Role="tbl_bolum" Type="Self.tbl_bolum" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_universite">
+        <PropertyRef Name="universite_id" />
+      </Principal>
+      <Dependent Role="tbl_bolum">
+        <PropertyRef Name="universite_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_fakulte_tbl_universite">
+    <End Role="tbl_universite" Type="Self.tbl_universite" Multiplicity="0..1" />
+    <End Role="tbl_fakulte" Type="Self.tbl_fakulte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_universite">
+        <PropertyRef Name="universite_id" />
+      </Principal>
+      <Dependent Role="tbl_fakulte">
+        <PropertyRef Name="universite_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_tbl_ilan_tbl_tip">
+    <End Role="tbl_tip" Type="Self.tbl_tip" Multiplicity="0..1" />
+    <End Role="tbl_ilan" Type="Self.tbl_ilan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_tip">
+        <PropertyRef Name="tip_id" />
+      </Principal>
+      <Dependent Role="tbl_ilan">
+        <PropertyRef Name="ilan_tip" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="stajdenemeModelStoreContainer">
+    <EntitySet Name="ilceler" EntityType="Self.ilceler" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="iller" EntityType="Self.iller" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_admin" EntityType="Self.tbl_admin" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_basvuru" EntityType="Self.tbl_basvuru" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_bolum" EntityType="Self.tbl_bolum" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_fakulte" EntityType="Self.tbl_fakulte" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_ilan" EntityType="Self.tbl_ilan" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_tip" EntityType="Self.tbl_tip" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_universite" EntityType="Self.tbl_universite" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_yetkinlik" EntityType="Self.tbl_yetkinlik" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ilceler_iller" Association="Self.FK_ilceler_iller">
+      <End Role="iller" EntitySet="iller" />
+      <End Role="ilceler" EntitySet="ilceler" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_basvuru_ilceler" Association="Self.FK_tbl_basvuru_ilceler">
+      <End Role="ilceler" EntitySet="ilceler" />
+      <End Role="tbl_basvuru" EntitySet="tbl_basvuru" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_basvuru_iller" Association="Self.FK_tbl_basvuru_iller">
+      <End Role="iller" EntitySet="iller" />
+      <End Role="tbl_basvuru" EntitySet="tbl_basvuru" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_basvuru_tbl_bolum" Association="Self.FK_tbl_basvuru_tbl_bolum">
+      <End Role="tbl_bolum" EntitySet="tbl_bolum" />
+      <End Role="tbl_basvuru" EntitySet="tbl_basvuru" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_basvuru_tbl_fakulte" Association="Self.FK_tbl_basvuru_tbl_fakulte">
+      <End Role="tbl_fakulte" EntitySet="tbl_fakulte" />
+      <End Role="tbl_basvuru" EntitySet="tbl_basvuru" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_basvuru_tbl_universite" Association="Self.FK_tbl_basvuru_tbl_universite">
+      <End Role="tbl_universite" EntitySet="tbl_universite" />
+      <End Role="tbl_basvuru" EntitySet="tbl_basvuru" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_bolum_tbl_fakulte" Association="Self.FK_tbl_bolum_tbl_fakulte">
+      <End Role="tbl_fakulte" EntitySet="tbl_fakulte" />
+      <End Role="tbl_bolum" EntitySet="tbl_bolum" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_bolum_tbl_universite" Association="Self.FK_tbl_bolum_tbl_universite">
+      <End Role="tbl_universite" EntitySet="tbl_universite" />
+      <End Role="tbl_bolum" EntitySet="tbl_bolum" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_fakulte_tbl_universite" Association="Self.FK_tbl_fakulte_tbl_universite">
+      <End Role="tbl_universite" EntitySet="tbl_universite" />
+      <End Role="tbl_fakulte" EntitySet="tbl_fakulte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_tbl_ilan_tbl_tip" Association="Self.FK_tbl_ilan_tbl_tip">
+      <End Role="tbl_tip" EntitySet="tbl_tip" />
+      <End Role="tbl_ilan" EntitySet="tbl_ilan" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

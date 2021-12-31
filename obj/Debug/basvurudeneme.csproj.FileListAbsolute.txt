@@ -1,0 +1,3 @@
+C:\Users\redki\Desktop\stajdeneme\stajdeneme\obj\Debug\basvurudeneme.csprojAssemblyReference.cache
+C:\Users\redki\Desktop\stajdeneme\stajdeneme\obj\Debug\stajdeneme.dll
+C:\Users\redki\Desktop\stajdeneme\stajdeneme\obj\Debug\stajdeneme.pdb
