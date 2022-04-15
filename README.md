@@ -1,2 +1,2 @@
 # aspnetexample
-ASP.NET example wiht Boostrap
+ASP.NET example with Boostrap
